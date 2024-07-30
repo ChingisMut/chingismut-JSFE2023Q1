@@ -1,0 +1,117 @@
+.in-addition {
+  background-color: $color-light-l;
+}
+
+.in-addition-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-left: 30px;
+  @include media-tablet {
+    margin-left: 0;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+
+.in-addition-img {
+  margin-top: 95px;
+  @include media-tablet {
+    margin-top: 0;
+    margin-bottom: 100px;
+  }
+  @include media-small-mobile {
+    width: 260px;
+    height: 135.2px;
+    margin-bottom: 42px;
+  }
+}
+
+.in-addition-content {
+  margin: 83px 30px 100px;
+  max-width: 380px;
+  @include media-tablet {
+    margin: 77px 0 60px;
+  }
+  @include media-small-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 42px;
+  }
+}
+
+.in-addition-title {
+  max-width: 300px;
+  margin-bottom: 16px;
+  letter-spacing: 2px;
+  color: $color-dark-l;
+  @include media-small-mobile {
+    margin: 42px 0 20px;
+    font-size: 2.5rem;
+    line-height: 32.5px;
+    text-align: center;
+    letter-spacing: 0.06em;
+  }
+}
+
+.in-addition-text {
+  margin-bottom: 15px;
+  font-family: 'Georgia', sans-serif;
+  letter-spacing: 0.9px;
+  color: $color-dark-l;
+  @include media-small-mobile {
+    margin-bottom: 18px;
+    letter-spacing: 0;
+    text-align: center;
+  }
+}
+
+.in-addition-donation {
+  max-width: 349px;
+  margin-bottom: 22px;
+  display: flex;
+  padding: 10px 15px;
+  background-color: $color-primary;
+  border-radius: 9px;
+  @include media-tablet {
+    margin-bottom: 20px;
+    max-width: 349px;
+  }
+  @include media-small-mobile {
+    margin-right: 0;
+    max-width: 280px;
+  }
+}
+
+.in-addition-card {
+  margin-right: 15px;
+  @include media-small-mobile {
+    margin-right: 14px;
+  }
+}
+
+.in-addition-number {
+  font-size: 2rem;
+  line-height: 23px;
+  font-family: 'Georgia', sans-serif;
+  color: $color-dark-l;
+  letter-spacing: 1.17px;
+  @include media-small-mobile {
+    font-size: 1.5rem;
+    line-height: 16.5px;
+    align-self: center;
+    letter-spacing: 0.06em;
+  }
+}
+
+.in-addition-info {
+  font-size: 1.2rem;
+  line-height: 18px;
+  font-style: italic;
+  color: $color-dark-m;
+  @include media-small-mobile {
+    max-width: 280px;
+    text-align: justify;
+  }
+}

@@ -1,0 +1,58 @@
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  font-size: 1.5rem;
+  font-family: Arial, sans-serif;
+  line-height: 2.4rem;
+  overflow-x: hidden;
+  position: relative;
+  box-sizing: border-box;
+  &.noscroll {
+    overflow: hidden;
+    position: fixed;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 400;
+  list-style: none;
+  text-decoration: none;
+}
+
+h1 {
+  font-family: 'Georgia', sans-serif;
+  font-size: 4.4rem;
+  line-height: 5.72rem;
+}
+
+h2 {
+  font-family: 'Georgia', sans-serif;
+  font-size: 3.5rem;
+  line-height: 45.5px;
+}
+
+h3 {
+  font-family: 'Georgia', sans-serif;
+  font-size: 2rem;
+  line-height: 23px;
+  letter-spacing: 0.06em;
+}
+
+h4 {
+  font-family: 'Georgia', sans-serif;
+  font-size: 1.5rem;
+  line-height: 17px;
+  letter-spacing: 0.06em;
+}
+
+p {
+  font-size: 1.5rem;
+  line-height: 24px;
+}

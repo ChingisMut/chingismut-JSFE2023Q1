@@ -1,0 +1,115 @@
+.our-friends {
+  position: relative;
+  background-color: $color-light-l;
+  @include media-small-mobile {
+
+  }
+}
+
+.our-friends-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.our-friends-title {
+  margin-top: 80px;
+  margin-bottom: 58px;
+  max-width: 400px;
+  text-align: center;
+  color: $color-dark-l;
+  font-size: 3.5rem;
+  line-height: 45.5px;
+  letter-spacing: 0.06em;
+  @include media-tablet {
+    margin-bottom: 30px;
+  }
+  @include media-small-mobile {
+    margin: 42px 0;
+    font-size: 2.5rem;
+    line-height: 32.5px;
+    text-align: center;
+  }
+}
+
+.our-friends-content {
+  max-width: 1200px;
+  margin-bottom: 34px;
+  display: flex;
+  align-items: center;
+  & .button {
+    margin-bottom: 30px;
+    width: 187px;
+    height: 52px;
+    font-size: 1.7rem;
+    color: $color-dark-3xl;
+    letter-spacing: 1px;
+  }
+  @include media-tablet {
+    margin-bottom: 12px;
+  }
+  @include media-small-mobile {
+    margin-bottom: 14px;
+  }
+}
+
+.our-friends-list {
+  margin: 0 -20px;
+  display: flex;
+  flex-wrap: wrap;
+  @include media-tablet {
+    justify-content: center;
+  }
+  @include media-small-mobile {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.our-friends-item {
+  margin: 0 20px 28px;
+  width: calc(25% - 40px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: $color-light-s;
+  border-radius: 9px;
+  transition: all 0.3s;
+  &:hover {
+    .button {
+      background: $color-primary-light;
+    }
+  }
+  @include media-tablet {
+    width: 270px;
+  }
+}
+
+.our-friends-img {
+  margin-bottom: 30px;
+  border-radius: 9px 9px 0px 0px;
+}
+
+.our-friends-name {
+  margin-bottom: 30px;
+  font-family: 'Georgia', sans-serif;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  color: $color-dark-l;
+}
+
+.our-friends-buttons {
+  display: flex;
+  margin-bottom: 100px;
+  @include media-tablet {
+    margin-bottom: 76px;
+  }
+  @include media-small-mobile {
+    max-width: 310px;
+    margin-bottom: 42px;
+  }
+}

@@ -1,0 +1,154 @@
+.button {
+  width: 204px;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Georgia', sans-serif;
+  border-radius: 100px;
+  transition: all 0.3s;
+  color: $color-dark-3xl;
+  text-decoration: none;
+  cursor: pointer;
+  &:hover {
+    background: $color-primary-light;
+  }
+}
+
+.button-bordered {
+  background: $color-light-xl;
+  border: 2px solid $color-primary-light;
+}
+
+.btn {
+  width: 207px;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Georgia', sans-serif;
+  border-radius: 100px;
+  transition: all 0.3s;
+  color: $color-dark-3xl;
+  text-decoration: none;
+  cursor: pointer;
+  &:hover {
+    background: $color-primary-light;
+  }
+}
+
+.btn-bordered {
+  background: $color-primary;
+  border: 2px solid $color-primary;
+  &:hover {
+    border: 2px solid $color-primary-light;
+  }
+}
+
+.prev {
+  margin-right: 8px;
+  margin-bottom: 43px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s;
+  &:hover {
+    background: $color-primary-light;
+  }
+  @include media-tablet {
+    margin-bottom: 45px;
+    margin-right: 12px;
+  }
+  @include media-small-mobile {
+    position: absolute;
+    margin: 0 0 0 43px;
+    bottom: 136px;
+  }
+}
+
+.next {
+  margin-left: 8px;
+  margin-bottom: 43px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s;
+  &:hover {
+    background: $color-primary-light;
+  }
+  @include media-tablet {
+    margin-bottom: 45px;
+    margin-left: 12px;
+  }
+  @include media-small-mobile {
+    position: absolute;
+    margin: 0 0 0 175px;
+    bottom: 136px;
+  }
+}
+
+.next-img {
+  display: block;
+  width: 14px;
+  height: 6px;
+  background-image: url('../../../assets/icons/next.svg');
+}
+
+.prev-img {
+  display: block;
+  width: 14px;
+  height: 6px;
+  background-image: url('../../../assets/icons/next.svg');
+  transform: rotate(180deg);
+}
+
+.close {
+  position: relative;
+  top: -274px;
+  right: -16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  transition: all 0.3s;
+  transition: all 1s;
+  transform: scale(0);
+  &_active {
+    z-index: 3;
+    transform: scale(1);
+  }
+  &:hover {
+    background: $color-primary-light;
+  }
+  @include media-tablet {
+    top: -201px;
+    right: -17px;
+  }
+  @include media-small-mobile {
+    top: -238px;
+    right: 11px;
+  }
+}
+
+.close-img {
+  display: block;
+  width: 12px;
+  height: 12px;
+  background-image: url('../../../assets/icons/close.svg');
+}
+
+.close-bordered {
+  background: none;
+  border: 2px solid $color-primary-light;
+}
